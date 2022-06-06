@@ -1,0 +1,23 @@
+.gradient {
+  animation: gradient 10s ease-in-out infinite;
+  background: linear-gradient(to right, #2B8C44, #F2BC1B, #012611);
+  background-size: 300%;
+  text-align: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0 50%
+  }
+}
