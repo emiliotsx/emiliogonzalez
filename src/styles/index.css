@@ -5,7 +5,7 @@
   margin: 0 auto;
 }
 
-@media (width <= 640px) {
+@media (min-width: 640px) {
   .home {
     width: 90% !important;
     flex-direction: column-reverse;
