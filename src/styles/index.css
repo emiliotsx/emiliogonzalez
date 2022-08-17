@@ -1,23 +1,32 @@
-.gradient {
-  animation: gradient 10s ease-in-out infinite;
-  background: linear-gradient(to right, #2B8C44, #F2BC1B, #012611);
-  background-size: 300%;
-  text-align: center;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0 50%
+@media (width <= 640px) {
+  .home {
+    width: 90% !important;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    min-height: 85vh !important;
   }
 
-  50% {
-    background-position: 100% 50%
+  .home__description {
+    text-align: center;
+    padding: 1.5rem;
   }
 
-  100% {
-    background-position: 0 50%
+  .home__description-title {
+    font-size: 1rem !important;
+  }
+
+  .home__description-subtitle {
+    font-size: 2rem !important;
+  }
+
+  .home__profile {
+    padding: 1.5rem;
   }
 }
