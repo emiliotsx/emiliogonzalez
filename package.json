@@ -28,5 +28,8 @@
       "dist",
       "src/**/*.js"
     ]
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/ts-standard/eslintrc.json"
   }
 }
