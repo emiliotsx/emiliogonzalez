@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app'
 
-import { Layout } from 'src/components/layout'
+import { Layout } from '@/components/layout'
 
 import '@/styles/index.css'
 import '@/styles/tailwind.css'

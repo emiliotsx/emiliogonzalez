@@ -1,8 +1,8 @@
 import { FC, ReactNode } from 'react'
 import Head from 'next/head'
 
-import { Header } from 'src/components/header'
-import { Footer } from 'src/components/footer'
+import { Header } from '@/components/header'
+import { Footer } from '@/components/footer'
 
 export const Layout: FC<Props> = ({ children }): JSX.Element => {
   return (
