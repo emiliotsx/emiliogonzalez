@@ -1,14 +1,11 @@
 import type { AppProps } from 'next/app'
 
+import { Layout } from '@/components/layout'
 
-import { Layout } from 'src/components/layout';
+import '@/styles/index.css'
+import '@/styles/tailwind.css'
 
-import '@/styles/index.css';
-import '@/styles/tailwind.css';
-
-
-function MyApp({ Component, pageProps }: AppProps) {
-
+function MyApp ({ Component, pageProps }: AppProps): JSX.Element {
   /** QUITAR EL LAYOUT GLOBAL */
   return (
     <div className='root'>
