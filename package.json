@@ -26,7 +26,8 @@
     "project": "./tsconfig.json",
     "ignore": [
       "dist",
-      "src/**/*.js"
+      "src/**/*.js",
+      "next-env.d.ts"
     ]
   },
   "eslintConfig": {
