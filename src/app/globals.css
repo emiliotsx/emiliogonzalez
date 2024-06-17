@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #111B21;
+  --dark-green: #103527;
+  --light-green: #25D366;
+  --green: #156038;
+}
+
+body {
+  color: var(--light-green);
+  background: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
