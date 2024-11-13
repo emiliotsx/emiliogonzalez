@@ -1,9 +1,15 @@
-import Cover from '@/app/components/Cover'
+import Me from '@/app/components/sections/Me'
+import Experience from '@/app/components/sections/Experience'
+import Projects from '@/app/components/sections/Projects'
+import About from '@/app/components/sections/About'
 
-export default function Home(): JSX.Element {
+export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Cover />
+    <main className="h-screen-whitout-header p-4">
+      <Me />
+      <Projects />
+      <Experience />
+      <About />
     </main>
   );
 }
