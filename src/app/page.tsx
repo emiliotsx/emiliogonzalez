@@ -5,7 +5,7 @@ import About from '@/app/components/sections/About'
 
 export default function Home() {
   return (
-    <main className="h-screen-whitout-header p-4">
+    <main className="h-screen-whitout-header p-4 mb-10">
       <Me />
       <Projects />
       <Experience />

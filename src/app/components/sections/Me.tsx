@@ -1,8 +1,3 @@
-import Image from "next/image"
-
-import profile from '@/app/assets/profile.jpg'
-
-import Section from "../Section"
 import GitHub from "../icons/GitHub"
 import LinkedIn from "../icons/LinkedIn"
 import Codepen from "../icons/Codepen"
@@ -25,30 +20,24 @@ export default function Me() {
   }
 
   return (
-    <Section className="flex justify-center flex-col items-center">
-      <article className="flex justify-center items-center flex-col text-center">
-        <div className="relative w-52 h-52 overflow-hidden rounded-full mb-2">
-          <Image
-            src={profile}
-            width={208}
-            height={208}
-            alt="Emilio González"
-            className="aspect-square object-cover"
-          />
-        </div>
-        <h1 className="font-black text-3xl">Emilio González</h1>
-        <h2 className="font-medium text-lg my-1">Desarrollador Web con + {years} años de experiencia</h2>
+    <section id="home" className="max-w-sm mx-auto lg:w-[800px] my-3">
+      <article>
+        {/* dark:text-shadow-green */}
+        <h1 className="font-black text-4xl text-green tracking-tight">Emilio González</h1>
+        <h2 className="font-bold text-2xl my-2 text-green-medium tracking-tight">Desarrollador Web</h2>
+        <p className="text-wrap font-medium text-xl my-2 tracking-tight">+ {years} años de experiencia con sede en Guatemala, apasionado por el desarrollo web.</p>
       </article>
-      <article className="flex flex-wrap gap-2 mt-3">
+      <article className="flex flex-wrap gap-2 mt-4">
         {socialsMedia.map(({ url, icon }) => {
           const Icon = SOCIAL_ICONS[icon]
           return (
+            // text-green-medium bg-green
             <a
               key={icon}
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-4 py-1 text-green-medium transition bg-green rounded-full group max-w-fit"
+              className="inline-flex items-center justify-center gap-2 px-3 py-1 bg-green text-white transition rounded-full group max-w-fit hover:bg-green-medium hover:text-white"
             >
               <Icon />
               {icon}
@@ -56,6 +45,6 @@ export default function Me() {
           )
         })}
       </article>
-    </Section>
+    </section>
   )
 }

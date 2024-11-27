@@ -1,4 +1,5 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
+import plugin from "tailwindcss/plugin"
 
 export default {
   content: [
@@ -10,12 +11,33 @@ export default {
     extend: {
       colors: {
         green: "var(--green)",
-        "green-medium": "var(--green-solid-medium)",
+        "green-medium": "var(--green-solid-medium)"
       },
       height: {
         'screen-whitout-header': 'calc(100vh - 5.4rem)'
       },
+      textShadow: {
+        light: '5px 5px 2px #ECECEC',
+        green: '5px 5px 2px var(--green)',
+      },
+      backgroundImage: {
+        timeline: 'linear-gradient(121deg, var(--brand-background-medium) 0%, var(--green-dark) 100%)'
+      },
+      rotate: {
+        5: '5deg'
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    })
+  ],
 } satisfies Config;

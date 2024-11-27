@@ -1,22 +1,43 @@
-export default function Card() {
-  return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        {/* <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" /> */}
-      </a>
-      <div className="p-5">
-        <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-        </a>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-          Read more
-          <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-          </svg>
-        </a>
-      </div>
-    </div>
+import Image from "next/image"
+import Preview from "./icons/Preview"
 
+export default function Card({ image, title, description, url }: Props) {
+  return (
+    <div className="max-w-sm overflow-hidden bg-white shadow-2xl rounded-xl mt-10">
+      <header className="relative h-[200px] w-full group">
+        <div className="h-[200px]">
+          <Image
+            src={image}
+            fill
+            objectFit='cover'
+            alt={url}
+            className="grayscale transition-all duration-500 ease-in-out group-hover:grayscale-0 group-hover:scale-110"
+          />
+        </div>
+      </header>
+      <div className="px-5 pt-5">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-wrap">{title}</h5>
+        <p className="mb-3 font-normal tracking-tight">{description}</p>
+      </div>
+      <footer className="px-5 pt-1 pb-5">
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-around px-2 py-2 text-sm text-white transition bg-green rounded-lg w-24 hover:bg-green-medium hover:text-white"
+        >
+          Ver Sitio
+          <Preview />
+        </a>
+      </footer>
+    </div>
   )
+}
+
+interface Props {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  image: any
+  title: string
+  description: string
+  url: string
 }

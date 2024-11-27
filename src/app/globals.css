@@ -3,24 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #f4f2ee;
   --foreground: #171717;
   --page-background: #0A0A0A;
   --brand-background-medium: #081719;
   --static-transparent: #00000000;
   --green-solid-medium: #05926f;
   --green: #0a332c;
+  --green-dark: #0d1d10;
 }
 
-@media (prefers-color-scheme: dark) {
+/* TODO: use this for when make the change theme */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
-  background: radial-gradient(100% 100% at 49.99% 0%, var(--static-transparent) 0%, var(--page-background) 100%), radial-gradient(87.4% 84.04% at 6.82% 16.24%, var(--brand-background-medium) 0%, var(--static-transparent) 100%), radial-gradient(217.89% 126.62% at 48.04% 0%, var(--page-background) 0%, var(--page-background) 100%);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f4f6;
 }
