@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { montserrat } from '@/app/fonts'
 import "./globals.css";
 
-import Footer from '@/app/components/Footer'
+import Navbar from '@/app/components/navbar/index'
 
 export const metadata: Metadata = {
   title: "Emilio González",
@@ -23,7 +23,7 @@ export default function RootLayout({
         className={`${montserrat.className} antialiased`}
       >
         {children}
-        <Footer />
+        <Navbar />
       </body>
     </html>
   );

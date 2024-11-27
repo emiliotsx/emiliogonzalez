@@ -1,24 +1,24 @@
 import Image from 'next/image'
 
+import Section from '@/app/components/Section'
 import profile from '@/app/assets/profile.png'
-
 import AboutIcon from "@/app/components/icons/About"
-
 
 export default function About() {
 
-  const TextGreenStrong = ({ description }: { description: string }) => (
-    <span className="font-semibold text-green">{description}</span>
+  const year = new Date().getFullYear()
+
+  const TextGreenStrong = ({ text }: { text: string }) => (
+    <span className="font-semibold text-green">{text}</span>
   )
 
   return (
-    <section id="about" className="max-w-sm mx-auto lg:w-[800px] my-3 mt-20 h-96">
-      <article className="flex items-center">
-        <div className="pr-2">
-          <AboutIcon size="8" />
-        </div>
-        <h2 className="text-3xl text-italic font-bold text-green">Sobre Mí !</h2>
-      </article>
+    <Section
+      id="about"
+      icon={<AboutIcon variant="medium" />}
+      title="Sobre Mí !"
+      className='my-20'
+    >
       <article className='flex justify-center transition-all duration-500 -rotate-3 hover:rotate-0'>
         <Image
           src={profile}
@@ -27,14 +27,17 @@ export default function About() {
           width={400}
         />
       </article>
-      <article className="p-4 pt-0">
+      <article className="px-4">
         <p className="text-green text-wrap tracking-tight py-2">
-          Mi nombre es Emilio González, soy programador desde <TextGreenStrong description="2018" />. Tengo experiencia como <TextGreenStrong description="Frontend y Backend" />, tambien administrando <TextGreenStrong description="Bases de datos relacionales y no relaciones" />
+          Mi nombre es Emilio González, soy programador desde <TextGreenStrong text="2018" />. Tengo experiencia como <TextGreenStrong text="Frontend y Backend" />, tambien administrando <TextGreenStrong text="Bases de datos relacionales y no relaciones" />
         </p>
         <p className="text-green text-wrap tracking-tight py-2">
-          Actualmente <TextGreenStrong description="estoy encargado de la creación y mantenimiento de módulos para sistemas empresariales" /> enfocados en mejorar la productividad de los usuarios.
+          Actualmente <TextGreenStrong text="estoy encargado de la creación y mantenimiento de módulos para sistemas empresariales" /> enfocados en mejorar la productividad de los usuarios.
+        </p>
+        <p className="text-green text-wrap tracking-tight py-3 text-sm">
+          <TextGreenStrong text={`© ${year} Emilio González. Casi todos los derechos reservados`} />
         </p>
       </article>
-    </section>
+    </Section>
   )
 }

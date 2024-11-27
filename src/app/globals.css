@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #f4f2ee;
+  --background: #f3f4f6;
   --foreground: #171717;
   --page-background: #0A0A0A;
   --brand-background-medium: #081719;
@@ -23,5 +23,5 @@
 
 body {
   color: var(--foreground);
-  background-color: #f3f4f6;
+  background-color: var(--background);
 }

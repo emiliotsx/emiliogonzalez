@@ -5,11 +5,11 @@ import About from '@/app/components/sections/About'
 
 export default function Home() {
   return (
-    <main className="h-screen-whitout-header p-4 mb-10">
+    <main className="w-sm mx-auto h-auto px-5 md:w-[800px] md:px-7">
       <Me />
       <Projects />
       <Experience />
       <About />
     </main>
-  );
+  )
 }

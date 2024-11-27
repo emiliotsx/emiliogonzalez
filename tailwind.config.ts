@@ -13,9 +13,6 @@ export default {
         green: "var(--green)",
         "green-medium": "var(--green-solid-medium)"
       },
-      height: {
-        'screen-whitout-header': 'calc(100vh - 5.4rem)'
-      },
       textShadow: {
         light: '5px 5px 2px #ECECEC',
         green: '5px 5px 2px var(--green)',

@@ -10,6 +10,7 @@ interface Link {
 interface SocialMeda {
   url: string
   icon: string
+  text?: string
 }
 
 interface Project {
@@ -17,6 +18,7 @@ interface Project {
   title: string
   description: string
   url: string
+  tecnologies: string[]
 }
 
 interface Experience {
@@ -26,3 +28,5 @@ interface Experience {
   company: string
   description: string
 }
+
+type VariantIcon = 'small' | 'medium'

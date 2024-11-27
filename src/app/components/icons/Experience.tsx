@@ -1,4 +1,4 @@
-export default function Experience({ size = '4' }: { size: string }) {
+export default function Experience({ variant = 'small' }: { variant: VariantIcon }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,7 +6,7 @@ export default function Experience({ size = '4' }: { size: string }) {
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="currentColor"
-      className={`size-${size}`}
+      className={`${variant === 'small' ? 'size-4' : 'size-8'}`}
     >
       <path
         strokeLinecap="round"

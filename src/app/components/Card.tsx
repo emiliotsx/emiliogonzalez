@@ -3,14 +3,14 @@ import Preview from "./icons/Preview"
 
 export default function Card({ image, title, description, url }: Props) {
   return (
-    <div className="max-w-sm overflow-hidden bg-white shadow-2xl rounded-xl mt-10">
-      <header className="relative h-[200px] w-full group">
-        <div className="h-[200px]">
+    <div className="w-sm overflow-hidden bg-white shadow-2xl rounded-xl mt-10 md:flex md:flex-row md:w-full">
+      <header className="relative h-[200px] w-full group md:h-[220px] md:w-[800px]">
+        <div className="h-[200px] md:h-auto md:w-2/4 md:rounded-none md:rounded-s-lg">
           <Image
             src={image}
+            alt={url}
             fill
             objectFit='cover'
-            alt={url}
             className="grayscale transition-all duration-500 ease-in-out group-hover:grayscale-0 group-hover:scale-110"
           />
         </div>
