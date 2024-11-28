@@ -1,12 +1,12 @@
-import Link from './Link'
+import Link from './link'
+import Theme from './Theme'
 
 export default function Links() {
   const links: Link[] = [
     { name: 'Inicio', path: 'home', icon: 'Home' },
     { name: 'Proyectos', path: 'projects', icon: 'Project' },
     { name: 'Experiencia', path: 'experience', icon: 'Experience' },
-    { name: 'Sobre Mí', path: 'about', icon: 'About' },
-    { name: 'Tema', path: '', icon: 'Sun' }
+    { name: 'Sobre Mí', path: 'about', icon: 'About' }
   ]
 
   return (
@@ -14,6 +14,7 @@ export default function Links() {
       {links?.map(link => (
         <Link key={link.name} {...link} />
       ))}
+      <Theme />
     </ul>
   )
 }

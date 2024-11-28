@@ -1,6 +1,3 @@
-interface Dictionary {
-  [key: string]: any
-}
 interface Link {
   name: string
   path: string
@@ -30,3 +27,5 @@ interface Experience {
 }
 
 type VariantIcon = 'small' | 'medium'
+
+type Theme = 'light' | 'dark' | ''

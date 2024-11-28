@@ -5,21 +5,13 @@
 :root {
   --background: #f3f4f6;
   --foreground: #171717;
-  --page-background: #0A0A0A;
+  --page-background: #28282B;
   --brand-background-medium: #081719;
   --static-transparent: #00000000;
   --green-solid-medium: #05926f;
   --green: #0a332c;
   --green-dark: #0d1d10;
 }
-
-/* TODO: use this for when make the change theme */
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
 body {
   color: var(--foreground);

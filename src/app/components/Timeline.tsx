@@ -16,18 +16,18 @@ export default function Timeline({ position, startDate, endDate, company, descri
         <h3 className="flex items-center text-lg font-extrabold text-green-medium">
           {position}
         </h3>
-        <h4 className="flex items-center mb-1 text-base font-semibold text-green">
+        <h4 className="flex items-center mb-1 text-base font-semibold text-green dark:text-green-medium">
           {company}
         </h4>
-        <time className="block mb-2 text-sm font-semibold leading-none text-gray-400">
+        <time className="block mb-2 text-sm font-semibold leading-none text-gray-500 dark:text-gray-50">
           {dates}
           {!endDate && (
-            <span className="bg-green text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-1">
+            <span className="bg-green text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-1 dark:text-green-medium dark:border-2 dark:border-green-medium">
               Actualmente
             </span>
           )}
         </time>
-        <p className="my-8 text-base font-normal text-gray-500 text-wrap tracking-tight">{description}</p>
+        <p className="my-8 text-base font-normal text-wrap tracking-tight text-green dark:text-white">{description}</p>
       </li>
     </ol>
   )

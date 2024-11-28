@@ -6,7 +6,7 @@ export default function Home({ variant = 'small' }: { variant: VariantIcon }) {
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="currentColor"
-      className={`${variant === 'small' ? 'size-4' : 'size-8'}`}
+      className={`${variant === 'small' ? 'size-4' : 'size-8'} dark:text-green-medium dark:text-shadow-green`}
     >
       <path
         strokeLinecap="round"

@@ -29,22 +29,20 @@ export default function Me() {
       className="mt-5 mb-20"
     >
       <article>
-        {/* dark:text-shadow-green */}
-        <h1 className="font-black text-4xl text-green tracking-tight">Emilio González</h1>
+        <h1 className="font-black text-4xl text-green tracking-tight dark:text-green-medium dark:text-shadow-green">Emilio González</h1>
         <h2 className="font-bold text-2xl my-2 text-green-medium tracking-tight">Desarrollador Web</h2>
-        <p className="text-wrap font-medium text-xl my-2 tracking-tight">+ {years} años de experiencia con sede en Guatemala, apasionado por el desarrollo web.</p>
+        <p className="text-wrap font-medium text-xl my-2 tracking-tight dark:text-white">+ {years} años de experiencia con sede en Guatemala, apasionado por el desarrollo web.</p>
       </article>
       <article className="flex flex-wrap gap-2 mt-4">
         {socialsMedia.map(({ url, icon, text }) => {
           const Icon = SOCIAL_ICONS[icon]
           return (
-            // text-green-medium bg-green
             <a
               key={icon}
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-3 py-1 bg-green text-white transition rounded-full group min-w-32 max-w-fit text-md hover:bg-green-medium hover:text-white"
+              className="inline-flex items-center justify-center gap-2 px-3 py-1 bg-green text-white transition rounded-full group min-w-32 max-w-fit font-semibold text-md border-2 border-green hover:border-green-medium hover:bg-green-medium hover:text-white dark:text-green-medium hover:dark:text-white dark:border-2 dark:border-green-medium"
             >
               <Icon />
               {text ?? icon}

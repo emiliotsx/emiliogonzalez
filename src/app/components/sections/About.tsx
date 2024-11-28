@@ -9,7 +9,7 @@ export default function About() {
   const year = new Date().getFullYear()
 
   const TextGreenStrong = ({ text }: { text: string }) => (
-    <span className="font-semibold text-green">{text}</span>
+    <span className="font-semibold text-green dark:text-green-medium">{text}</span>
   )
 
   return (
@@ -28,13 +28,13 @@ export default function About() {
         />
       </article>
       <article className="px-4 animate-element">
-        <p className="text-green text-wrap tracking-tight py-2">
+        <p className="text-green text-wrap tracking-tight py-2 dark:text-white">
           Mi nombre es Emilio González, soy programador desde <TextGreenStrong text="2018" />. Tengo experiencia como <TextGreenStrong text="Frontend y Backend" />, tambien administrando <TextGreenStrong text="Bases de datos relacionales y no relaciones" />
         </p>
-        <p className="text-green text-wrap tracking-tight py-2">
+        <p className="text-green text-wrap tracking-tight py-2 dark:text-white">
           Actualmente <TextGreenStrong text="estoy encargado de la creación y mantenimiento de módulos para sistemas empresariales" /> enfocados en mejorar la productividad de los usuarios.
         </p>
-        <p className="text-green text-wrap tracking-tight pt-4 pb-3 text-sm text-center">
+        <p className="text-green text-wrap tracking-tight pt-4 pb-3 text-sm text-center dark:text-white">
           <TextGreenStrong text={`© ${year} Emilio González. Casi todos los derechos reservados`} />
         </p>
       </article>

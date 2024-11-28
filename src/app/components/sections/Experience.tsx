@@ -12,7 +12,7 @@ export default function Experience() {
       title="Experiencia Laboral"
       className='my-20'
     >
-      <article className="flex justify-center items-center flex-col mt-5 bg-white py-8 rounded-lg shadow-2xl">
+      <article className="flex justify-center items-center flex-col mt-5 bg-white py-8 rounded-lg shadow-2xl dark:bg-black dark:shadow-black">
         {EXPERIENCES.map(e => (
           <Timeline
             key={e.company}
