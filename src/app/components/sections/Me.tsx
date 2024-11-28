@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 
 import Section from '@/app/components/Section'
 import GitHub from "@/app/components/icons/GitHub"
@@ -6,6 +7,8 @@ import Codepen from "@/app/components/icons/Codepen"
 import Email from "@/app/components/icons/Email"
 
 export default function Me() {
+
+  const t = useTranslations()
 
   const years = new Date().getFullYear() - 2018
 
@@ -29,9 +32,9 @@ export default function Me() {
       className="mt-5 mb-20"
     >
       <article>
-        <h1 className="font-black text-4xl text-green tracking-tight dark:text-green-medium dark:text-shadow-green">Emilio González</h1>
-        <h2 className="font-bold text-2xl my-2 text-green-medium tracking-tight">Desarrollador Web</h2>
-        <p className="text-wrap font-medium text-xl my-2 tracking-tight dark:text-white">+ {years} años de experiencia con sede en Guatemala, apasionado por el desarrollo web.</p>
+        <h1 className="font-black text-4xl text-green tracking-tight dark:text-green-medium dark:text-shadow-green">{t('name')}</h1>
+        <h2 className="font-bold text-2xl my-2 text-green-medium tracking-tight">{t('position')}</h2>
+        <p className="text-wrap font-medium text-xl my-2 tracking-tight dark:text-white">+ {years} {t('description')}</p>
       </article>
       <article className="flex flex-wrap gap-2 mt-4">
         {socialsMedia.map(({ url, icon, text }) => {
