@@ -8,9 +8,11 @@ export default function Timeline({ position, startDate, endDate, company, descri
   const dates = `${startMonth.charAt(0).toUpperCase()}${startMonth.slice(1)} - ${!!endDate ? format(endDate, "MMMM YYYY", "es") : ''}`
 
   return (
-    <ol className="relative border-s border-green w-4/5">
+    <ol className="relative border-s border-green w-4/5 animate-element">
       <li className="ms-8">
-        <TimelineIcon />
+        <span className="absolute flex items-center justify-center w-6 h-6 bg-green rounded-full -start-3 ring-8 ring-green-medium">
+          <TimelineIcon />
+        </span>
         <h3 className="flex items-center text-lg font-extrabold text-green-medium">
           {position}
         </h3>

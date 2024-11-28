@@ -10,7 +10,6 @@ import { PROJECTS } from '@/app/data/projects'
 
 export default function Projects() {
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const images: Record<string, any> = {
     jycwedding,
     kymwedding,

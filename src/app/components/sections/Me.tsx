@@ -16,7 +16,6 @@ export default function Me() {
     { url: 'mailto:emiliofgonzalez7@gmail.com', icon: 'Email', text: 'Contáctame' }
   ]
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const SOCIAL_ICONS: Record<string, any> = {
     GitHub,
     LinkedIn,
@@ -27,7 +26,7 @@ export default function Me() {
   return (
     <Section
       id="home"
-      className="mt-10 mb-20"
+      className="mt-5 mb-20"
     >
       <article>
         {/* dark:text-shadow-green */}

@@ -2,7 +2,7 @@ import Link from './Link'
 
 export default function Links() {
   const links: Link[] = [
-    { name: 'Inicio', path: 'home', icon: 'Moon' },
+    { name: 'Inicio', path: 'home', icon: 'Home' },
     { name: 'Proyectos', path: 'projects', icon: 'Project' },
     { name: 'Experiencia', path: 'experience', icon: 'Experience' },
     { name: 'Sobre Mí', path: 'about', icon: 'About' },
@@ -10,7 +10,7 @@ export default function Links() {
   ]
 
   return (
-    <ul className="flex items-center justify-center font-semibold">
+    <ul className="flex items-center justify-around font-semibold md:h-12">
       {links?.map(link => (
         <Link key={link.name} {...link} />
       ))}

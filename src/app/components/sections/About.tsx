@@ -17,9 +17,9 @@ export default function About() {
       id="about"
       icon={<AboutIcon variant="medium" />}
       title="Sobre Mí !"
-      className='my-20'
+      className='my-20 md:pb-6'
     >
-      <article className='flex justify-center transition-all duration-500 -rotate-3 hover:rotate-0'>
+      <article className='flex justify-center transition-all duration-500 -rotate-3 hover:rotate-0 animate-element'>
         <Image
           src={profile}
           alt='Emilio González'
@@ -27,14 +27,14 @@ export default function About() {
           width={400}
         />
       </article>
-      <article className="px-4">
+      <article className="px-4 animate-element">
         <p className="text-green text-wrap tracking-tight py-2">
           Mi nombre es Emilio González, soy programador desde <TextGreenStrong text="2018" />. Tengo experiencia como <TextGreenStrong text="Frontend y Backend" />, tambien administrando <TextGreenStrong text="Bases de datos relacionales y no relaciones" />
         </p>
         <p className="text-green text-wrap tracking-tight py-2">
           Actualmente <TextGreenStrong text="estoy encargado de la creación y mantenimiento de módulos para sistemas empresariales" /> enfocados en mejorar la productividad de los usuarios.
         </p>
-        <p className="text-green text-wrap tracking-tight py-3 text-sm">
+        <p className="text-green text-wrap tracking-tight pt-4 pb-3 text-sm text-center">
           <TextGreenStrong text={`© ${year} Emilio González. Casi todos los derechos reservados`} />
         </p>
       </article>

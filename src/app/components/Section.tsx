@@ -7,7 +7,7 @@ export default function Section({
 }: Props) {
   return (
     <section id={id} className={`${className}`}>
-      <article className="flex items-center">
+      <article className="flex items-center animate-element">
         {icon && <div className="pr-2">{icon}</div>}
         {title && <h2 className="text-3xl text-italic font-bold text-green tracking-tight">{title}</h2>}
       </article>
