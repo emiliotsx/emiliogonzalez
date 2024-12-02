@@ -29,7 +29,7 @@ export default function Link({ name, path, icon }: Link) {
         onClick={handleScroll}
         className="block p-4 text-green rounded-full border hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-125 hover:bg-green-medium hover:rotate-5 dark:bg-black dark:text-green-medium hover:dark:text-white dark:border-2 dark:border-dark"
       >
-        <Badge name={name} />
+        <Badge text={name} />
         <Icon icon={icon} />
       </NextLink>
     </li>

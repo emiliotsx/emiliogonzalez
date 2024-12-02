@@ -1,12 +1,18 @@
+import { useLocale, useTranslations } from 'next-intl'
+
 import Link from './link'
 import Theme from './Theme'
+import LanguageSwitch from './LanguageSwitch'
 
 export default function Links() {
+  const t = useTranslations("Navigation")
+  const locale = useLocale()
+
   const links: Link[] = [
-    { name: 'Inicio', path: 'home', icon: 'Home' },
-    { name: 'Proyectos', path: 'projects', icon: 'Project' },
-    { name: 'Experiencia', path: 'experience', icon: 'Experience' },
-    { name: 'Sobre Mí', path: 'about', icon: 'About' }
+    { name: t("home"), path: 'home', icon: 'Home' },
+    { name: t("projects"), path: 'projects', icon: 'Project' },
+    { name: t("experience"), path: 'experience', icon: 'Experience' },
+    { name: t("about"), path: 'about', icon: 'About' }
   ]
 
   return (
@@ -14,7 +20,14 @@ export default function Links() {
       {links?.map(link => (
         <Link key={link.name} {...link} />
       ))}
-      <Theme />
+      <Theme
+        textThemeDark={t("textThemeDark")}
+        textThemeLight={t("textThemeLight")}
+      />
+      <LanguageSwitch
+        textLanguage={t("textLanguage")}
+        locale={locale}
+      />
     </ul>
   )
 }

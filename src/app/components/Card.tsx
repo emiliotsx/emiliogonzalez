@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Preview from "./icons/Preview"
 
-export default function Card({ image, title, description, url }: Props) {
+export default function Card({ image, title, description, url, labelButton }: Props) {
   return (
     <div className="w-sm overflow-hidden bg-white shadow-2xl rounded-xl mt-10 md:flex md:flex-row md:w-full animate-element dark:bg-black dark:shadow-black">
       <header className="relative h-[200px] w-full group md:h-auto md:w-[300px]">
@@ -27,7 +27,7 @@ export default function Card({ image, title, description, url }: Props) {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-around px-2 py-2 text-md text-white transition bg-green rounded-lg w-28 hover:bg-green-medium hover:text-white md:font-semibold dark:text-green-medium hover:dark:text-white dark:border-2 dark:border-green-medium"
           >
-            Ver Sitio
+            {labelButton}
             <Preview />
           </a>
         </footer>
@@ -41,4 +41,5 @@ interface Props {
   title: string
   description: string
   url: string
+  labelButton: string
 }

@@ -7,8 +7,7 @@ import Codepen from "@/app/components/icons/Codepen"
 import Email from "@/app/components/icons/Email"
 
 export default function Me() {
-
-  const t = useTranslations()
+  const t = useTranslations("Me")
 
   const years = new Date().getFullYear() - 2018
 
@@ -16,7 +15,7 @@ export default function Me() {
     { url: 'https://github.com/emiliotsx', icon: 'GitHub' },
     { url: 'https://www.linkedin.com/in/emiliotsx', icon: 'LinkedIn' },
     { url: 'https://codepen.io/emiliotsx', icon: 'Codepen' },
-    { url: 'mailto:emiliofgonzalez7@gmail.com', icon: 'Email', text: 'Contáctame' }
+    { url: 'mailto:emiliofgonzalez7@gmail.com', icon: 'Email', text: t("contactame") }
   ]
 
   const SOCIAL_ICONS: Record<string, any> = {

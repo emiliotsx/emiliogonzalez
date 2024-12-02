@@ -1,5 +1,36 @@
 {
-  "name": "Emilio González",
-  "position": "Desarrollador Web",
-  "description": " años de experiencia con sede en Guatemala, apasionado por el desarrollo web."
+  "Me": {
+    "name": "Emilio González",
+    "position": "Desarrollador Web",
+    "description": " años de experiencia con sede en Guatemala, apasionado por el desarrollo web.",
+    "contactame": "Contáctame"
+  },
+  "Projects": {
+    "title": "Proyectos",
+    "labelButton": "Ver Sitio"
+  },
+  "Experience": {
+    "title": "Experiencia Laboral",
+    "label": "Actualmente"
+  },
+  "About": {
+    "title": "Sobre Mí !",
+    "paragraphOne": "Mi nombre es Emilio González, soy programador desde",
+    "paragraphTwo": "Tengo experiencia como",
+    "paragraphThree": "tambien administrando",
+    "paragraphFour": "Bases de datos relacionales y no relaciones",
+    "paragraphFive": "Actualmente",
+    "paragraphSix": "estoy encargado de la creación y mantenimiento de módulos para sistemas empresariales",
+    "paragraphSeven": "enfocados en mejorar la productividad de los usuarios.",
+    "footer": "Casi todos los derechos reservados"
+  },
+  "Navigation": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "about": "Sobre Mí",
+    "textThemeDark": "Obscuro",
+    "textThemeLight": "Claro",
+    "textLanguage": "Cambiar idioma"
+  }
 }

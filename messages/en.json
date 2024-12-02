@@ -1,5 +1,36 @@
 {
-  "name": "Emilio González",
-  "position": "Web Developer",
-  "description": " years of experience based in Guatemala, passionate about web development."
+  "Me": {
+    "name": "Emilio González",
+    "position": "Web Developer",
+    "description": " years of experience based in Guatemala, passionate about web development.",
+    "contactame": "Contact me"
+  },
+  "Projects": {
+    "title": "Projects",
+    "labelButton": "Preview"
+  },
+  "Experience": {
+    "title": "Experience",
+    "label": "Currently"
+  },
+  "About": {
+    "title": "About Me !",
+    "paragraphOne": "My name is Emilio González, and I have been a programmer since",
+    "paragraphTwo": "I have experience as",
+    "paragraphThree": "and also managing",
+    "paragraphFour": "relational and non-relational databases.",
+    "paragraphFive": "Currently,",
+    "paragraphSix": "I am responsible for creating and maintaining modules for enterprise systems",
+    "paragraphSeven": "focused on improving user productivity.",
+    "footer": "Almost all rights reserved"
+  },
+  "Navigation": {
+    "home": "Home",
+    "projects": "Projects",
+    "experience": "Experience",
+    "about": "About Me",
+    "textThemeDark": "Dark",
+    "textThemeLight": "Light",
+    "textLanguage": "Change language"
+  }
 }

@@ -4,6 +4,8 @@ import About from "@/app/components/icons/About"
 import Home from '@/app/components/icons/Home'
 import Moon from '@/app/components/icons/Moon'
 import Sun from '@/app/components/icons/Sun'
+import Spain from '@/app/components/icons/Spain'
+import Usa from '@/app/components/icons/Usa'
 
 const ICONS_MOBILE: Record<string, any> = {
   About: <About variant='small' />,
@@ -11,7 +13,9 @@ const ICONS_MOBILE: Record<string, any> = {
   Experience: <Experience variant='small' />,
   Home: <Home variant='small' />,
   Moon: <Moon variant='small' />,
-  Sun: <Sun variant='small' />
+  Sun: <Sun variant='small' />,
+  Spain: <Spain variant='small' />,
+  Usa: <Usa variant='small' />
 }
 
 const ICONS_DESKTOP: Record<string, any> = {
@@ -20,7 +24,9 @@ const ICONS_DESKTOP: Record<string, any> = {
   Experience: <Experience variant='medium' />,
   Home: <Home variant='medium' />,
   Moon: <Moon variant='medium' />,
-  Sun: <Sun variant='medium' />
+  Sun: <Sun variant='medium' />,
+  Spain: <Spain variant='medium' />,
+  Usa: <Usa variant='medium' />
 }
 
 export default function Icon({ icon }: { icon: string }) {

@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { NextIntlClientProvider } from 'next-intl';
-import { getLocale, getMessages } from 'next-intl/server';
+import { NextIntlClientProvider, useLocale } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+
+import { routing } from '@/i18n/routing';
 import { montserrat } from '@/app/fonts'
-import "./globals.css";
+
+import "../globals.css";
 
 import Navbar from '@/app/components/navbar/index'
 
@@ -14,14 +18,14 @@ export const metadata: Metadata = {
   }
 };
 
-export default async function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
 
-  const locale = await getLocale();
-  console.log('locale', locale)
+  const locale = useLocale()
+
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
 
   // Providing all messages to the client
   // side is the easiest way to get started

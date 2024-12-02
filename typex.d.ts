@@ -29,3 +29,5 @@ interface Experience {
 type VariantIcon = 'small' | 'medium'
 
 type Theme = 'light' | 'dark' | ''
+
+type Language = 'es' | 'en'

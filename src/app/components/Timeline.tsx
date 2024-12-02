@@ -2,9 +2,9 @@ import { format } from "@formkit/tempo"
 
 import TimelineIcon from "./icons/Timeline"
 
-export default function Timeline({ position, startDate, endDate, company, description }: Experience) {
+export default function Timeline({ position, startDate, endDate, company, description, locale, label }: Props) {
 
-  const startMonth = format(startDate, "MMMM YYYY", "es")
+  const startMonth = format(startDate, "MMMM YYYY", locale)
   const dates = `${startMonth.charAt(0).toUpperCase()}${startMonth.slice(1)} - ${!!endDate ? format(endDate, "MMMM YYYY", "es") : ''}`
 
   return (
@@ -23,7 +23,7 @@ export default function Timeline({ position, startDate, endDate, company, descri
           {dates}
           {!endDate && (
             <span className="bg-green text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-1 dark:text-green-medium dark:border-2 dark:border-green-medium">
-              Actualmente
+              {label}
             </span>
           )}
         </time>
@@ -31,4 +31,9 @@ export default function Timeline({ position, startDate, endDate, company, descri
       </li>
     </ol>
   )
+}
+
+interface Props extends Experience {
+  locale: string
+  label: string
 }
