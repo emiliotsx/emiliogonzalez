@@ -31,3 +31,13 @@ type VariantIcon = 'small' | 'medium'
 type Theme = 'light' | 'dark' | ''
 
 type Language = 'es' | 'en'
+
+type Locales = 'en-US' | 'es-ES' | Language
+
+interface Params {
+  params: Promise<{ lang: Language }>
+}
+
+interface Lang {
+  lang: Language
+}

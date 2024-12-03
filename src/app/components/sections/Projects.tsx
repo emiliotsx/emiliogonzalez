@@ -1,5 +1,3 @@
-import { useLocale, useTranslations } from 'next-intl'
-
 import jycwedding from '@/app/assets/projects/jycwedding.png'
 import kymwedding from '@/app/assets/projects/kymwedding.png'
 import medinachangwedding from '@/app/assets/projects/medinachangwedding.png'
@@ -8,13 +6,13 @@ import Section from '@/app/components/Section'
 import Card from "@/app/components/Card";
 import Project from "@/app/components/icons/Project"
 
+import { getDictionary } from '@/app/dictionary'
 
 import { PROJECTS } from '@/app/data/projects'
 
-export default function Projects() {
+export default async function Projects({ lang }: Lang) {
 
-  const t = useTranslations("Projects")
-  const locale = useLocale() as Language
+  const t = (await getDictionary(lang)).Projects
 
   const images: Record<string, any> = {
     jycwedding,
@@ -26,11 +24,11 @@ export default function Projects() {
     <Section
       id="projects"
       icon={<Project variant="medium" />}
-      title={t("title")}
+      title={t.title}
       className='my-20'
     >
       <article className="flex justify-center items-center flex-col -mt-5">
-        {PROJECTS[locale]?.map(p => {
+        {PROJECTS[lang]?.map(p => {
           const image = images[p.image]
           return (
             <Card
@@ -39,7 +37,7 @@ export default function Projects() {
               title={p.title}
               description={p.description}
               url={p.url}
-              labelButton={t('labelButton')}
+              labelButton={t.labelButton}
             />
           )
         })}

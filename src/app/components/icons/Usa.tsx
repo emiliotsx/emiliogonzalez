@@ -4,7 +4,7 @@ export default function Usa({ variant = 'small' }: { variant: VariantIcon }) {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 130 120"
-      enable-background="new 0 0 130 120"
+      enableBackground="new 0 0 130 120"
       className={`${variant === 'small' ? 'size-4' : 'size-8'} dark:text-green-medium dark:text-shadow-green`}
     >
       <g id="Infos">
