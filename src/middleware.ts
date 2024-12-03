@@ -14,11 +14,15 @@ const SELECT_LOCALE = {
 }
 
 function getLocale(request: NextRequest) {
-  const headers = (request.headers.get('accept-language') ?? DEFAULT_LANGUAGE_HEADER) as Headers
+  const headers = (request.headers.get('accept-language') ?? DEFAULT_LANGUAGE_HEADER) as any
   const negotiator = new Negotiator({ headers })
   const languages = negotiator.languages()
 
-  if (languages.includes('*')) return DEFAULT_LOCALE
+
+  if (languages.includes('*')) {
+    if (!headers.includes(LOCALES[0])) return DEFAULT_LOCALE
+    return SELECT_LOCALE[LOCALES[0] as Locales]
+  }
 
   const selectedLocale = match(languages, LOCALES, DEFAULT_LOCALE)
   return SELECT_LOCALE[selectedLocale as Locales] || DEFAULT_LOCALE
