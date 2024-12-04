@@ -27,7 +27,7 @@ export default function LanguageSwitch({ textLanguage, locale }: { textLanguage:
         type='button'
       >
         <Badge text={textLanguage} />
-        <span className='uppercase text-sm'>{locale}</span>
+        <span className='uppercase text-sm dark:text-green-medium'>{locale}</span>
       </button>
     </li>
   )

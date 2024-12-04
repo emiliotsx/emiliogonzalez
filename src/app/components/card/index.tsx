@@ -6,14 +6,13 @@ import Tecnologie from "./Tecnologie"
 export default function Card({ image, title, description, url, tecnologies, labelButton }: Props) {
   return (
     <div className="w-sm overflow-hidden bg-white shadow-2xl rounded-xl mt-10 md:flex md:flex-row md:w-full animate-element dark:bg-black dark:shadow-black">
-      <header className="relative h-[200px] w-full group md:h-auto md:w-[300px]">
+      <header className="relative h-[200px] w-full group md:h-auto md:w-[400px]">
         <div className="h-[200px] md:h-auto md:w-48 md:rounded-none md:rounded-s-lg ">
           <Image
             src={image}
             alt={url}
             fill
-            objectFit='cover'
-            className="grayscale transition-all duration-500 ease-in-out group-hover:grayscale-0 group-hover:scale-110"
+            className="object-cover grayscale transition-all duration-500 ease-in-out group-hover:grayscale-0 group-hover:scale-110"
           />
         </div>
       </header>

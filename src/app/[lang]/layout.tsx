@@ -1,5 +1,4 @@
-import type { Metadata } from "next";
-// import { notFound } from 'next/navigation';
+import type { Metadata } from "next"
 
 import { montserrat } from '@/app/fonts'
 
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico'
   }
-};
+}
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (

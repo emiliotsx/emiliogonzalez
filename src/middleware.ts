@@ -18,7 +18,6 @@ function getLocale(request: NextRequest) {
   const negotiator = new Negotiator({ headers })
   const languages = negotiator.languages()
 
-
   if (languages.includes('*')) {
     if (!headers.includes(LOCALES[0])) return DEFAULT_LOCALE
     return SELECT_LOCALE[LOCALES[0] as Locales]
@@ -37,7 +36,7 @@ export function middleware(request: NextRequest) {
   if (pathnameHasLocale) return
 
   const locale = getLocale(request)
-  request.nextUrl.pathname = `/${locale}${pathname}`
+  request.nextUrl.pathname = `/${locale}`
   return NextResponse.redirect(request.nextUrl)
 }
 
