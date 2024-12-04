@@ -8,8 +8,6 @@ import Project from "@/app/components/icons/Project"
 
 import { getDictionary } from '@/app/dictionary'
 
-import { PROJECTS } from '@/app/data/projects'
-
 export default async function Projects({ lang }: Lang) {
 
   const t = (await getDictionary(lang)).Projects
@@ -28,7 +26,7 @@ export default async function Projects({ lang }: Lang) {
       className='my-20'
     >
       <article className="flex justify-center items-center flex-col -mt-5">
-        {PROJECTS[lang]?.map(p => {
+        {t.projects?.map(p => {
           const image = images[p.image]
           return (
             <Card
