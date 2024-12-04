@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f3f4f6;
+  --foreground: #171717;
+  --page-background: #28282B;
+  --brand-background-medium: #081719;
+  --green-solid-medium: #05926f;
+  --green: #0a332c;
+  --green-dark: #0d1d10;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.animate-element {
+  view-timeline: --li;
+  view-timeline-axis: block;
+  animation-timeline: --li;
+  animation-name: show;
+  animation-range: entry 10% cover 15%;
+  animation-fill-mode: both;
+}
