@@ -7,11 +7,80 @@
   },
   "Projects": {
     "title": "Projects",
-    "labelButton": "Preview"
+    "labelButton": "Preview",
+    "projects": [
+      {
+        "image": "jycwedding",
+        "title": "Jeffrey and Cecili's Wedding",
+        "description": "This is a landing page used as an invitation, showcasing all the important information about the wedding. It includes a form connected to a database to confirm attendance at the event.",
+        "url": "https://jycwedding.com",
+        "tecnologies": [
+          "Next",
+          "Tailwind"
+        ]
+      },
+      {
+        "image": "kymwedding",
+        "title": "Kevin and Ana Mildred's Wedding",
+        "description": "Online invitation with all the information about the itinerary, event location, and an option to confirm attendance.",
+        "url": "https://kymwedding.com",
+        "tecnologies": [
+          "Next",
+          "Tailwind"
+        ]
+      },
+      {
+        "image": "medinachangwedding",
+        "title": "Steeven and Fernanda's Wedding",
+        "description": "Online invitation with all the information about the itinerary, event location, and an image gallery with details about the couple.",
+        "url": "https://medinachangwedding.com",
+        "tecnologies": [
+          "Next",
+          "Tailwind"
+        ]
+      }
+    ]
   },
   "Experience": {
     "title": "Experience",
-    "label": "Currently"
+    "label": "Currently",
+    "experiences": [
+      {
+        "position": "Senior Web Developer",
+        "startDate": "2022-03-01",
+        "endDate": "",
+        "company": "Grupo Tecun",
+        "description": "Responsible for developing new modules and functionalities for the system, including analysis and estimation. Provided support for integrations carried out within the company."
+      },
+      {
+        "position": "Web Developer",
+        "startDate": "2021-09-01",
+        "endDate": "2022-02-01",
+        "company": "Freelance",
+        "description": "Provided maintenance services for websites and web applications, collaborating with different companies and helping small businesses achieve an online presence."
+      },
+      {
+        "position": "Technical Support Analyst",
+        "startDate": "2020-10-01",
+        "endDate": "2021-07-01",
+        "company": "Osigu",
+        "description": "Part of the integrations team, assisting external clients in integrating the company's services using DLL. Leveraging my FrontEnd knowledge, I supported the development of a landing page that helped automate internal processes and improve productivity."
+      },
+      {
+        "position": "Frontend Developer",
+        "startDate": "2020-02-01",
+        "endDate": "2020-08-01",
+        "company": "Corporación Master Group",
+        "description": "Developed the main landing page for one of the company's products, using Prismic to give the marketing team full autonomy over published content. Contributed to the team responsible for migrating systems from Angular 7 to newer versions of Nuxt, enhancing user experience."
+      },
+      {
+        "position": "Project Developer",
+        "startDate": "2018-11-01",
+        "endDate": "2020-02-01",
+        "company": "ESTRATEK",
+        "description": "Responsible for the development, maintenance, and support of external client systems. Took charge of the development and maintenance of the company's main platform, including analysis and delivery time estimation."
+      }
+    ]
   },
   "About": {
     "title": "About Me !",
@@ -22,7 +91,28 @@
     "paragraphFive": "Currently,",
     "paragraphSix": "I am responsible for creating and maintaining modules for enterprise systems",
     "paragraphSeven": "focused on improving user productivity.",
-    "skills": "I have experience working with the following technologies",
+    "paragraphEight": "I have experience working with the following technologies",
+    "skilss": [
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "JavaScript",
+      "TypeScript",
+      "Angular",
+      "React",
+      "Next.js",
+      "Astro",
+      "Java",
+      "PHP",
+      "Node.js",
+      ".Net",
+      "Node",
+      "PostgreSQL",
+      "Oracle",
+      "SQL Server",
+      "Git",
+      "GitHub"
+    ],
     "footer": "Almost all rights reserved"
   },
   "Navigation": {

@@ -4,8 +4,6 @@ import ExperienceIcon from "@/app/components/icons/Experience"
 
 import { getDictionary } from '@/app/dictionary'
 
-import { EXPERIENCES } from "@/app/data/experience"
-
 export default async function Experience({ lang }: Lang) {
 
   const t = (await getDictionary(lang)).Experience
@@ -18,7 +16,7 @@ export default async function Experience({ lang }: Lang) {
       className='my-20'
     >
       <article className="flex justify-center items-center flex-col mt-5 bg-white py-8 rounded-lg shadow-2xl dark:bg-black dark:shadow-black">
-        {EXPERIENCES[lang]?.map(e => (
+        {t.experiences?.map(e => (
           <Timeline
             key={e.company}
             {...e}

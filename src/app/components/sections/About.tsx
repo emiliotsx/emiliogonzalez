@@ -4,7 +4,6 @@ import Section from '@/app/components/Section'
 import profile from '@/app/assets/profile.png'
 import AboutIcon from "@/app/components/icons/About"
 
-import { SKILLS } from '@/app/data/skills'
 import { getDictionary } from '@/app/dictionary'
 
 export default async function About({ lang }: Lang) {
@@ -41,10 +40,10 @@ export default async function About({ lang }: Lang) {
       </article>
       <article className='px-4 animate-element py-2'>
         <p className="text-green text-wrap tracking-tight py-2 dark:text-white">
-          {t.skills}
+          {t.paragraphEight}
         </p>
         <ul className="inline-flex flex-wrap gap-2 mt-1">
-          {SKILLS.map((skill) => (
+          {t.skilss.map((skill) => (
             <li key={skill} className="rounded-md bg-[#e9e9e9] text-[#222] text-xs font-medium px-2 py-1">
               <span>{skill}</span>
             </li>
