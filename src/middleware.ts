@@ -1,6 +1,6 @@
 import { NextResponse, NextRequest } from "next/server";
 import { match } from '@formatjs/intl-localematcher'
-import Negotiator, { Headers } from 'negotiator'
+import Negotiator from 'negotiator'
 
 
 const DEFAULT_LANGUAGE_HEADER = { 'accept-language': 'es-ES,es;q=0.5' }

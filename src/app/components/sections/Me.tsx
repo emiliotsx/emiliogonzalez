@@ -45,7 +45,7 @@ export default async function Me({ lang }: Lang) {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-3 py-1 bg-green text-white transition rounded-full group min-w-32 max-w-fit font-semibold text-md border-2 border-green hover:border-green-medium hover:bg-green-medium hover:text-white dark:text-green-medium hover:dark:text-white dark:border-2 dark:border-green-medium"
+              className="inline-flex items-center justify-center gap-2 px-3 py-1 bg-green text-white transition rounded-full group min-w-32 max-w-fit font-semibold border-2 border-green hover:border-green-medium hover:bg-green-medium hover:text-white dark:text-green-medium hover:dark:text-white dark:border-2 dark:border-green-medium"
             >
               <Icon />
               {text ?? icon}

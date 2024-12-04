@@ -13,8 +13,8 @@ export default {
       colors: {
         green: "var(--green)",
         "green-medium": "var(--green-solid-medium)",
-        dark: "var(--page-background)",
-        black: "var(--foreground)"
+        dark: "var(--foreground)",
+        black: "var(--page-background)"
       },
       textShadow: {
         light: '5px 5px 2px #ECECEC',

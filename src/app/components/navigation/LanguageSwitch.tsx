@@ -21,7 +21,7 @@ export default function LanguageSwitch({ textLanguage, locale }: { textLanguage:
   return (
     <li className='group'>
       <button
-        className='block p-3 px-4 text-green rounded-full border hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-125 hover:bg-green-medium hover:rotate-5 dark:bg-black dark:text-green-medium hover:dark:text-white dark:border-2 dark:border-dark'
+        className='block p-3 px-4 text-green rounded-full border hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-125 hover:bg-green-medium hover:rotate-5 dark:bg-dark dark:text-green-medium hover:dark:text-white dark:border-2 dark:border-dark'
         disabled={isPending}
         onClick={onSelectChange}
         type='button'

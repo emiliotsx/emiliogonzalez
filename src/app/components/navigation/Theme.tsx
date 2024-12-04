@@ -43,7 +43,7 @@ export default function Theme({ textThemeDark, textThemeLight }: { textThemeDark
     <li className='group'>
       <button
         onClick={() => handleSetTheme(theme)}
-        className="block p-4 text-green rounded-full border hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-125 hover:bg-green-medium hover:rotate-5 dark:bg-black dark:text-green-medium hover:dark:text-white dark:border-2 dark:border-dark"
+        className="block p-4 text-green rounded-full border hover:text-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-125 hover:bg-green-medium hover:rotate-5 dark:bg-dark dark:text-green-medium hover:dark:text-white dark:border-2 dark:border-dark"
         type='button'
       >
         <Badge text={theme === 'light' ? textThemeDark : textThemeLight} />
