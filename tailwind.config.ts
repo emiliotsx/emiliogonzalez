@@ -1,26 +1,44 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
+import plugin from "tailwindcss/plugin"
 
-const config: Config = {
+export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
-        background: 'var(--background)',
-        'dark-green': 'var(--dark-green)',
-        'light-green': 'var(--light-green)',
-        green: 'var(--green)'
+        green: "var(--green)",
+        "green-medium": "var(--green-solid-medium)",
+        dark: "var(--foreground)",
+        black: "var(--page-background)"
+      },
+      textShadow: {
+        light: '5px 5px 2px #ECECEC',
+        green: '5px 5px 2px var(--green)',
+      },
+      backgroundImage: {
+        timeline: 'linear-gradient(121deg, var(--brand-background-medium) 0%, var(--green-dark) 100%)',
+        dark: 'var(--page-background)'
+      },
+      rotate: {
+        5: '5deg'
       }
     },
   },
-  plugins: [],
-};
-export default config;
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    })
+  ],
+} satisfies Config;
