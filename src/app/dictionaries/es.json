@@ -22,7 +22,7 @@
       {
         "image": "kymwedding",
         "title": "Boda de Kevin y Ana Mildred",
-        "description": "Invitación online con toda la información de itinerario, lugar del evento y opcion para confirmar asistencia.",
+        "description": "Invitación online con toda la información de itinerario, lugar del evento y opción para confirmar asistencia.",
         "url": "https://kymwedding.com",
         "tecnologies": [
           "Next",
@@ -32,7 +32,7 @@
       {
         "image": "medinachangwedding",
         "title": "Boda de Steeven y Fernanda",
-        "description": "Invitación online con toda la información de itinerario, lugar del evento y galeria de imagenes con informacion de los novios.",
+        "description": "Invitación online con toda la información de itinerario, lugar del evento y galería de imágenes con información de los novios.",
         "url": "https://medinachangwedding.com",
         "tecnologies": [
           "Next",
@@ -50,7 +50,7 @@
         "startDate": "2022-03-01",
         "endDate": "",
         "company": "Grupo Tecun",
-        "description": "Encargado de desarrollar nuevos modulos y funcionalidades al sistema, responsable del análisis y estimacion del mismo. Brindo apoyo en las integraciones que se realizan en la empresa."
+        "description": "Encargado de desarrollar nuevos módulos y funcionalidades al sistema, responsable del análisis y estimación del mismo. Brindo apoyo en las integraciones que se realizan en la empresa."
       },
       {
         "position": "Desarrollador Web",
@@ -71,7 +71,7 @@
         "startDate": "2020-02-01",
         "endDate": "2020-08-01",
         "company": "Corporación Master Group",
-        "description": "Desarrollé la landing principal de uno de los productos de la empresa, utilizando prismic para que el equipo de marketing tuviese total autonomia en el contenido que se publicaba. Forme parte del equipo encargado de migrar los sistemas de angular 7 a versiones recientes de nuxt, mejorando la experiencia de usuario al momento de utilizarlas."
+        "description": "Desarrollé la landing principal de uno de los productos de la empresa, utilizando prismic para que el equipo de marketing tuviese total autonomía en el contenido que se publicaba. Forme parte del equipo encargado de migrar los sistemas de angular 7 a versiones recientes de nuxt, mejorando la experiencia de usuario al momento de utilizarlas."
       },
       {
         "position": "Desarrollador de Proyectos",
@@ -87,7 +87,7 @@
     "paragraphOne": "Mi nombre es Emilio González, soy programador desde",
     "paragraphTwo": "Tengo experiencia como",
     "paragraphThree": "tambien administrando",
-    "paragraphFour": "Bases de datos relacionales y no relaciones",
+    "paragraphFour": "Bases de datos relacionales y no relacionales",
     "paragraphFive": "Actualmente",
     "paragraphSix": "estoy encargado de la creación y mantenimiento de módulos para sistemas empresariales",
     "paragraphSeven": "enfocados en mejorar la productividad de los usuarios.",
