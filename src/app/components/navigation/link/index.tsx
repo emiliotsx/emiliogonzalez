@@ -1,15 +1,15 @@
-'use client'
+"use client"
 
-import NextLink from 'next/link'
+import NextLink from "next/link"
 
-import Badge from './Badge'
-import Icon from './Icon'
+import Badge from "./Badge"
+import Icon from "./Icon"
 
 export default function Link({ name, path, icon }: Link) {
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
-    const href = e.currentTarget.getAttribute('href')
+    const href = e.currentTarget.getAttribute("href")
     if (!href && !href?.startsWith("#")) return
 
     const element = document.getElementById(href.slice(1))
@@ -18,7 +18,7 @@ export default function Link({ name, path, icon }: Link) {
     const topPosition = element.getBoundingClientRect().top + window.scrollY - 20
     window.scrollTo({
       top: topPosition,
-      behavior: 'smooth'
+      behavior: "smooth"
     })
   }
 

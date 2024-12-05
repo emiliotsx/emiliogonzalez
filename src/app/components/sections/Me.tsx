@@ -1,10 +1,10 @@
-import Section from '@/app/components/Section'
+import Section from "@/app/components/Section"
 import GitHub from "@/app/components/icons/GitHub"
 import LinkedIn from "@/app/components/icons/LinkedIn"
 import Codepen from "@/app/components/icons/Codepen"
 import Email from "@/app/components/icons/Email"
 
-import { getDictionary } from '@/app/dictionary'
+import { getDictionary } from "@/app/dictionary"
 
 
 export default async function Me({ lang }: Lang) {
@@ -13,10 +13,10 @@ export default async function Me({ lang }: Lang) {
   const years = new Date().getFullYear() - 2018
 
   const socialsMedia: SocialMeda[] = [
-    { url: 'https://github.com/emiliotsx', icon: 'GitHub' },
-    { url: 'https://www.linkedin.com/in/emiliotsx', icon: 'LinkedIn' },
-    { url: 'https://codepen.io/emiliotsx', icon: 'Codepen' },
-    { url: 'mailto:emiliofgonzalez7@gmail.com', icon: 'Email', text: t.contactMe }
+    { url: "https://github.com/emiliotsx", icon: "GitHub" },
+    { url: "https://www.linkedin.com/in/emiliotsx", icon: "LinkedIn" },
+    { url: "https://codepen.io/emiliotsx", icon: "Codepen" },
+    { url: "mailto:emiliofgonzalez7@gmail.com", icon: "Email", text: t.contactMe }
   ]
 
   const SOCIAL_ICONS: Record<string, any> = {

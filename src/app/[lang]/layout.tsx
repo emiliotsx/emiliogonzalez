@@ -1,14 +1,14 @@
 import type { Metadata } from "next"
 
-import { montserrat } from '@/app/fonts'
+import { montserrat } from "@/app/fonts"
 
-import "../globals.css";
+import "../globals.css"
 
 export const metadata: Metadata = {
   title: "Emilio González",
   description: "Code with 💚 by @emiliotsx",
   icons: {
-    icon: '/favicon.ico'
+    icon: "/favicon.ico"
   }
 }
 
@@ -21,5 +21,5 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         {children}
       </body>
     </html>
-  );
+  )
 }

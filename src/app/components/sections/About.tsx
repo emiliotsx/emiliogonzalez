@@ -1,10 +1,10 @@
-import Image from 'next/image'
+import Image from "next/image"
 
-import Section from '@/app/components/Section'
-import profile from '@/app/assets/profile.png'
+import Section from "@/app/components/Section"
+import profile from "@/app/assets/profile.png"
 import AboutIcon from "@/app/components/icons/About"
 
-import { getDictionary } from '@/app/dictionary'
+import { getDictionary } from "@/app/dictionary"
 
 export default async function About({ lang }: Lang) {
   const t = (await getDictionary(lang)).About

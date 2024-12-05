@@ -1,12 +1,12 @@
-import jycwedding from '@/app/assets/projects/jycwedding.png'
-import kymwedding from '@/app/assets/projects/kymwedding.png'
-import medinachangwedding from '@/app/assets/projects/medinachangwedding.png'
+import jycwedding from "@/app/assets/projects/jycwedding.png"
+import kymwedding from "@/app/assets/projects/kymwedding.png"
+import medinachangwedding from "@/app/assets/projects/medinachangwedding.png"
 
-import Section from '@/app/components/Section'
-import Card from "@/app/components/card";
+import Section from "@/app/components/Section"
+import Card from "@/app/components/card"
 import Project from "@/app/components/icons/Project"
 
-import { getDictionary } from '@/app/dictionary'
+import { getDictionary } from "@/app/dictionary"
 
 export default async function Projects({ lang }: Lang) {
 
