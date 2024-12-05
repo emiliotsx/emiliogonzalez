@@ -1,6 +1,6 @@
 {
-  "src/**/*.{ts,tsx}": [
-      "npm run lint --fix",
-      "npm run build"
+  "*/**/*.{ts,tsx}": [
+      "next lint --fix",
+      "next build"
   ]
 }
