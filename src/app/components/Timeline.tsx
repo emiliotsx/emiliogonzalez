@@ -4,8 +4,11 @@ import TimelineIcon from "./icons/Timeline"
 
 export default function Timeline({ position, startDate, endDate, company, description, locale, label }: Props) {
 
-  const startMonth = format(startDate, "MMMM YYYY", locale)
-  const dates = `${startMonth.charAt(0).toUpperCase()}${startMonth.slice(1)} - ${!!endDate ? format(endDate, "MMMM YYYY", "es") : ""}`
+  const dates = () => {
+    const startMonth = format(startDate, "MMMM YYYY", locale)
+    const endMonth = !!endDate ? format(endDate, "MMMM YYYY", locale) : ""
+    return `${startMonth.charAt(0).toUpperCase()}${startMonth.slice(1)} - ${endMonth ? endMonth.charAt(0).toUpperCase() + endMonth.slice(1) : ""}`
+  }
 
   return (
     <ol className="relative border-s border-green w-4/5 animate-element">
@@ -20,7 +23,7 @@ export default function Timeline({ position, startDate, endDate, company, descri
           {company}
         </h4>
         <time className="block mb-2 text-sm font-semibold leading-none text-gray-500 dark:text-gray-50">
-          {dates}
+          {dates()}
           {!endDate && (
             <span className="bg-green text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-1 dark:text-green-medium dark:border-2 dark:border-green-medium">
               {label}
