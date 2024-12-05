@@ -1,7 +1,6 @@
 import Links from "@/app/components/navigation/Links"
 
 export default async function Navigation({ lang }: Lang) {
-  console.log('lang', lang)
   return (
     <>
       <nav className="w-full mx-auto px-3 py-2 fixed bottom-0 left-0 right-0 z-10 md:flex md:justify-center" >
