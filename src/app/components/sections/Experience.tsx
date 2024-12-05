@@ -1,8 +1,8 @@
-import Section from '@/app/components/Section'
+import Section from "@/app/components/Section"
 import Timeline from "@/app/components/Timeline"
 import ExperienceIcon from "@/app/components/icons/Experience"
 
-import { getDictionary } from '@/app/dictionary'
+import { getDictionary } from "@/app/dictionary"
 
 export default async function Experience({ lang }: Lang) {
 

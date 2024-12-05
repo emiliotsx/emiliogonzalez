@@ -1,24 +1,24 @@
-import { NextResponse, NextRequest } from "next/server";
-import { match } from '@formatjs/intl-localematcher'
-import Negotiator from 'negotiator'
+import { NextResponse, NextRequest } from "next/server"
+import { match } from "@formatjs/intl-localematcher"
+import Negotiator from "negotiator"
 
 
-const DEFAULT_LANGUAGE_HEADER = { 'accept-language': 'es-ES,es;q=0.5' }
+const DEFAULT_LANGUAGE_HEADER = { "accept-language": "es-ES,es;q=0.5" }
 const DEFAULT_LOCALE = "es"
-const LOCALES: Locales[] = ['en-US', 'es-ES', 'es', 'en']
+const LOCALES: Locales[] = ["en-US", "es-ES", "es", "en"]
 const SELECT_LOCALE = {
-  'en-US': 'en',
-  'es-ES': 'es',
-  'en': 'en',
-  'es': 'es',
+  "en-US": "en",
+  "es-ES": "es",
+  "en": "en",
+  "es": "es",
 }
 
 function getLocale(request: NextRequest) {
-  const headers = (request.headers.get('accept-language') ?? DEFAULT_LANGUAGE_HEADER) as any
+  const headers = (request.headers.get("accept-language") ?? DEFAULT_LANGUAGE_HEADER) as any
   const negotiator = new Negotiator({ headers })
   const languages = negotiator.languages()
 
-  if (languages.includes('*')) {
+  if (languages.includes("*")) {
     if (!headers.includes(LOCALES[0])) return DEFAULT_LOCALE
     return SELECT_LOCALE[LOCALES[0] as Locales]
   }
@@ -42,6 +42,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!_next).*)'
+    "/((?!_next).*)"
   ]
 }

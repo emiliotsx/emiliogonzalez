@@ -1,9 +1,9 @@
 import Project from "@/app/components/icons/Project"
 import Experience from "@/app/components/icons/Experience"
 import About from "@/app/components/icons/About"
-import Home from '@/app/components/icons/Home'
-import Moon from '@/app/components/icons/Moon'
-import Sun from '@/app/components/icons/Sun'
+import Home from "@/app/components/icons/Home"
+import Moon from "@/app/components/icons/Moon"
+import Sun from "@/app/components/icons/Sun"
 import Next from "@/app/components/icons/Next"
 import Tailwind from "@/app/components/icons/Tailwind"
 
@@ -35,10 +35,10 @@ export default function Icon({ icon, className }: { icon: string, className?: st
 
   return (
     <>
-      <span className={`block md:hidden ${!!className ? className : ''}`}>
+      <span className={`block md:hidden ${!!className ? className : ""}`}>
         {iconMobile}
       </span>
-      <span className={`hidden md:size-6 md:flex md:items-center md:justify-center ${!!className ? className : ''}`}>
+      <span className={`hidden md:size-6 md:flex md:items-center md:justify-center ${!!className ? className : ""}`}>
         {iconDesktop}
       </span>
     </>

@@ -1,18 +1,18 @@
 
-import Link from './link'
-import Theme from './Theme'
-import LanguageSwitch from './LanguageSwitch'
+import Link from "./link"
+import Theme from "./Theme"
+import LanguageSwitch from "./LanguageSwitch"
 
-import { getDictionary } from '@/app/dictionary'
+import { getDictionary } from "@/app/dictionary"
 
 export default async function Links({ lang }: Lang) {
   const t = (await getDictionary(lang)).Navigation
 
   const links: Link[] = [
-    { name: t.home, path: 'home', icon: 'Home' },
-    { name: t.projects, path: 'projects', icon: 'Project' },
-    { name: t.experience, path: 'experience', icon: 'Experience' },
-    { name: t.about, path: 'about', icon: 'About' }
+    { name: t.home, path: "home", icon: "Home" },
+    { name: t.projects, path: "projects", icon: "Project" },
+    { name: t.experience, path: "experience", icon: "Experience" },
+    { name: t.about, path: "about", icon: "About" }
   ]
 
   return (

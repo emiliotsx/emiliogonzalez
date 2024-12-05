@@ -1,11 +1,11 @@
-export default function Tailwind({ variant = 'small' }: { variant: VariantIcon }) {
+export default function Tailwind({ variant = "small" }: { variant: VariantIcon }) {
   return (
     <svg
       width="800px"
       height="800px"
       viewBox="0 0 32 32"
       xmlns="http://www.w3.org/2000/svg"
-      className={`${variant === 'small' ? 'size-4' : 'size-8'}`}
+      className={`${variant === "small" ? "size-4" : "size-8"}`}
     >
       <title>file_type_tailwind</title>
       <path

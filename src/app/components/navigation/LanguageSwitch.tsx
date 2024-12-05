@@ -1,16 +1,16 @@
-'use client'
+"use client"
 
 
-import { useTransition } from 'react'
-import { useRouter } from 'next/navigation';
+import { useTransition } from "react"
+import { useRouter } from "next/navigation"
 
-import Badge from './link/Badge'
+import Badge from "./link/Badge"
 
-import { i18n } from '@/app/i18n.config'
+import { i18n } from "@/app/i18n.config"
 
 export default function LanguageSwitch({ textLanguage, locale }: { textLanguage: string, locale: Language }) {
 
-  const router = useRouter();
+  const router = useRouter()
   const [isPending, startTransition] = useTransition()
 
   const onSelectChange = () => {

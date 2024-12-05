@@ -1,11 +1,11 @@
-export default function Sun({ variant = 'small' }: { variant: VariantIcon }) {
+export default function Sun({ variant = "small" }: { variant: VariantIcon }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24" strokeWidth="1.5"
       stroke="currentColor"
-      className={`${variant === 'small' ? 'size-4' : 'size-8'} dark:text-green-medium dark:text-shadow-green`}
+      className={`${variant === "small" ? "size-4" : "size-8"} dark:text-green-medium dark:text-shadow-green`}
     >
       <path
         strokeLinecap="round"

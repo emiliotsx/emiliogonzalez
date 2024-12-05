@@ -5,7 +5,7 @@ import TimelineIcon from "./icons/Timeline"
 export default function Timeline({ position, startDate, endDate, company, description, locale, label }: Props) {
 
   const startMonth = format(startDate, "MMMM YYYY", locale)
-  const dates = `${startMonth.charAt(0).toUpperCase()}${startMonth.slice(1)} - ${!!endDate ? format(endDate, "MMMM YYYY", "es") : ''}`
+  const dates = `${startMonth.charAt(0).toUpperCase()}${startMonth.slice(1)} - ${!!endDate ? format(endDate, "MMMM YYYY", "es") : ""}`
 
   return (
     <ol className="relative border-s border-green w-4/5 animate-element">
