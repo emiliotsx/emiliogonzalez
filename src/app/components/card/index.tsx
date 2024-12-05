@@ -18,7 +18,7 @@ export default function Card({ image, title, description, url, tecnologies, labe
       </header>
       <div className="md:w-[500px] md:ps-1">
         <div className="px-5 pt-5">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-wrap dark:text-white">{title}</h5>
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-wrap text-green dark:text-white">{title}</h5>
           <ul className="flex flex-row gap-x-2 mb-2">
             {tecnologies.map(t => (
               <li key={t}>
@@ -26,7 +26,7 @@ export default function Card({ image, title, description, url, tecnologies, labe
               </li>
             ))}
           </ul>
-          <p className="mb-3 font-normal tracking-tight dark:text-white">{description}</p>
+          <p className="mb-3 font-normal tracking-tight text-green dark:text-white">{description}</p>
         </div>
         <footer className="px-5 pt-1 pb-5">
           <a
