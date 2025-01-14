@@ -13,7 +13,7 @@
         "image": "jycwedding",
         "title": "Jeffrey and Cecili's Wedding",
         "description": "This is a landing page used as an invitation, showcasing all the important information about the wedding. It includes a form connected to a database to confirm attendance at the event.",
-        "url": "https://jycwedding.com",
+        "url": "https://jycwedding.vercel.app",
         "tecnologies": [
           "Next",
           "Tailwind"
@@ -23,7 +23,7 @@
         "image": "kymwedding",
         "title": "Kevin and Ana Mildred's Wedding",
         "description": "Online invitation with all the information about the itinerary, event location, and an option to confirm attendance.",
-        "url": "https://kymwedding.com",
+        "url": "https://kymwedding.vercel.app",
         "tecnologies": [
           "Next",
           "Tailwind"
@@ -33,7 +33,7 @@
         "image": "medinachangwedding",
         "title": "Steeven and Fernanda's Wedding",
         "description": "Online invitation with all the information about the itinerary, event location, and an image gallery with details about the couple.",
-        "url": "https://medinachangwedding.com",
+        "url": "https://medinachangwedding.vercel.app",
         "tecnologies": [
           "Next",
           "Tailwind"
