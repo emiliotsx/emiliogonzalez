@@ -14,4 +14,4 @@
 - ⚡ Optimized performance - Responsive design optimized for mobile devices.
 
 ## 🔑 License
-[MIT](LICENSE.md) - Created by [**Emilio**](https://emiliogonzalez.dev) - Almost all rights reserved. 
+[MIT](LICENSE) - Created by [**Emilio**](https://emiliogonzalez.dev) - Almost all rights reserved. 
