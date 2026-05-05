@@ -18,7 +18,7 @@ export default async function Experience({ lang }: Lang) {
       <article className="flex justify-center items-center flex-col mt-5 bg-white py-8 rounded-lg shadow-2xl dark:bg-black dark:shadow-black">
         {t.experiences?.map(e => (
           <Timeline
-            key={e.company}
+            key={`${e.company}-${e.startDate}`}
             {...e}
             locale={lang}
             label={t.label}

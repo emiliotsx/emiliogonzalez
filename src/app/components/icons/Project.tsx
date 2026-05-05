@@ -1,4 +1,4 @@
-export default function Project({ variant = "small" }: { variant: VariantIcon }) {
+export default function Project({ variant = "small" }: { variant?: VariantIcon }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

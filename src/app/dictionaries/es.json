@@ -8,47 +8,23 @@
   "Projects": {
     "title": "Proyectos",
     "labelButton": "Ver Sitio",
-    "projects": [
-      {
-        "image": "jycwedding",
-        "title": "Boda de Jeffrey y Cecilia",
-        "description": "Es una landing page la cual se utilizó como invitación y muestra toda la información importante referente a la boda. La misma cuenta con un formulario conectado a una base de datos para poder confirmar la asistencia al evento.",
-        "url": "https://jycwedding.vercel.app",
-        "tecnologies": [
-          "Next",
-          "Tailwind"
-        ]
-      },
-      {
-        "image": "kymwedding",
-        "title": "Boda de Kevin y Ana Mildred",
-        "description": "Invitación online con toda la información de itinerario, lugar del evento y opción para confirmar asistencia.",
-        "url": "https://kymwedding.vercel.app",
-        "tecnologies": [
-          "Next",
-          "Tailwind"
-        ]
-      },
-      {
-        "image": "medinachangwedding",
-        "title": "Boda de Steeven y Fernanda",
-        "description": "Invitación online con toda la información de itinerario, lugar del evento y galería de imágenes con información de los novios.",
-        "url": "https://medinachangwedding.vercel.app",
-        "tecnologies": [
-          "Next",
-          "Tailwind"
-        ]
-      }
-    ]
+    "projects": []
   },
   "Experience": {
     "title": "Experiencia Laboral",
     "label": "Actualmente",
     "experiences": [
       {
+        "position": "Fullstack Software Engineer",
+        "company": "Osigu",
+        "startDate": "2025-04-21",
+        "endDate": null,
+        "description": "Fullstack Software Engineer especializado en aplicaciones cloud escalables, con experiencia en microservicios, APIs y sistemas distribuidos en AWS. Trabajo con Spring Boot, PostgreSQL y Vue.js, enfocado en alta disponibilidad, concurrencia y procesamiento asíncrono (SQS). Fuerte enfoque en rendimiento, resiliencia y mejora continua."
+      },
+      {
         "position": "Desarrollador Web Senior",
         "startDate": "2022-03-01",
-        "endDate": "",
+        "endDate": "2025-04-17",
         "company": "Grupo Tecun",
         "description": "Encargado de desarrollar nuevos módulos y funcionalidades al sistema, responsable del análisis y estimación del mismo. Brindo apoyo en las integraciones que se realizan en la empresa."
       },
@@ -111,7 +87,11 @@
       "Oracle",
       "SQL Server",
       "Git",
-      "GitHub"
+      "GitHub",
+      "AWS",
+      "Spring Boot",
+      "Vue.js",
+      "Phyton"
     ],
     "footer": "Casi todos los derechos reservados"
   },

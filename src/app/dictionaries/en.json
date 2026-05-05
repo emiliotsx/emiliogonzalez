@@ -8,47 +8,23 @@
   "Projects": {
     "title": "Projects",
     "labelButton": "Preview",
-    "projects": [
-      {
-        "image": "jycwedding",
-        "title": "Jeffrey and Cecili's Wedding",
-        "description": "This is a landing page used as an invitation, showcasing all the important information about the wedding. It includes a form connected to a database to confirm attendance at the event.",
-        "url": "https://jycwedding.vercel.app",
-        "tecnologies": [
-          "Next",
-          "Tailwind"
-        ]
-      },
-      {
-        "image": "kymwedding",
-        "title": "Kevin and Ana Mildred's Wedding",
-        "description": "Online invitation with all the information about the itinerary, event location, and an option to confirm attendance.",
-        "url": "https://kymwedding.vercel.app",
-        "tecnologies": [
-          "Next",
-          "Tailwind"
-        ]
-      },
-      {
-        "image": "medinachangwedding",
-        "title": "Steeven and Fernanda's Wedding",
-        "description": "Online invitation with all the information about the itinerary, event location, and an image gallery with details about the couple.",
-        "url": "https://medinachangwedding.vercel.app",
-        "tecnologies": [
-          "Next",
-          "Tailwind"
-        ]
-      }
-    ]
+    "projects": []
   },
   "Experience": {
     "title": "Experience",
     "label": "Currently",
     "experiences": [
       {
+        "position": "Fullstack Software Engineer",
+        "startDate": "2025-04-21",
+        "endDate": null,
+        "company": "Osigu",
+        "description": "Fullstack Software Engineer specialized in scalable cloud applications, with experience in microservices, APIs, and distributed systems on AWS. Working with Spring Boot, PostgreSQL, and Vue.js, focused on high availability, concurrency, and asynchronous processing (SQS). Strong emphasis on performance, resilience, and continuous improvement."
+      },
+      {
         "position": "Senior Web Developer",
         "startDate": "2022-03-01",
-        "endDate": "",
+        "endDate": "2025-04-17",
         "company": "Grupo Tecun",
         "description": "Responsible for developing new modules and functionalities for the system, including analysis and estimation. Provided support for integrations carried out within the company."
       },
@@ -111,7 +87,11 @@
       "Oracle",
       "SQL Server",
       "Git",
-      "GitHub"
+      "GitHub",
+      "AWS",
+      "Spring Boot",
+      "Vue.js",
+      "Phyton"
     ],
     "footer": "Almost all rights reserved"
   },

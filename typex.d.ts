@@ -21,7 +21,7 @@ interface Project {
 interface Experience {
   position: string
   startDate: string
-  endDate: string
+  endDate: string | null
   company: string
   description: string
 }

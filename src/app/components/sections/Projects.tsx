@@ -4,7 +4,7 @@ import medinachangwedding from "@/app/assets/projects/medinachangwedding.png"
 
 import Section from "@/app/components/Section"
 import Card from "@/app/components/card"
-import Project from "@/app/components/icons/Project"
+import ProjectIcon from "@/app/components/icons/Project"
 
 import { getDictionary } from "@/app/dictionary"
 
@@ -21,12 +21,12 @@ export default async function Projects({ lang }: Lang) {
   return (
     <Section
       id="projects"
-      icon={<Project variant="medium" />}
+      icon={<ProjectIcon variant="medium" />}
       title={t.title}
       className='my-20'
     >
       <article className="flex justify-center items-center flex-col -mt-5">
-        {t.projects?.map(p => {
+        {(t.projects as Project[])?.map(p => {
           const image = images[p.image]
           return (
             <Card
